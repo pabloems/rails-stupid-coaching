@@ -1,9 +1,10 @@
+#MÉTOOS CREADOS PARA ENVIAR POSTERIORMENTE AL VIEW.
 class QuestionsController < ApplicationController
   def ask
   end
 
   def answer
-    @question = params[:question]
+    @question = pa rams[:question]
     @answer = if @question == "I am going to work"
       "Great!"
     elsif @question.end_with?("?")
